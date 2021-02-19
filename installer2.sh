@@ -34,8 +34,8 @@ read -p "Please enter your CPU manufacturer:  [ amd | intel ]" SYSBRND &&
 pacman -S $SYSBRND-ucode &&
 echo "done!" &&
 
-#echo "enabling dhcpcd"
-#rc-update add dhcpcd default &&
+echo "enabling dhcpcd"
+rc-update add dhcpcd default &&
 
 echo "creating new User" &&
 read -p "Please enter a valid username: " USRNME &&
@@ -52,4 +52,4 @@ echo "locking root user" &&
 passwd -l root &&
 echo "done" &&
 
-echo "everything is installed, you can now reboot the system"
+echo "done! please install GRUB for your system (UEFI/BIOS)" &&
