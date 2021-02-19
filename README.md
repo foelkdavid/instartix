@@ -1,0 +1,2 @@
+# instartix
+Artix Installer
