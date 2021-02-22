@@ -55,4 +55,4 @@ echo "locking root user" &&
 passwd -l root &&
 echo "done" &&
 
-echo "done! please install GRUB for your system (UEFI/BIOS)" &&
+echo "done! please install GRUB for your system (UEFI/BIOS)"
