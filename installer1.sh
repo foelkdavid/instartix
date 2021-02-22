@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "running pacstrap: loading packages to new system:" &&
-basestrap /mnt base linux linux-firmware syslinux sudo iwd nano dhcpcd dhcpcd-openrc grub git man binutils make gcc pkg-config fakeroot patch neovim neofetch memtest86+ edk2-shell openrc &&
+basestrap /mnt base linux linux-firmware syslinux sudo iwd iwd-openrc nano dhcpcd dhcpcd-openrc grub git man binutils make gcc pkg-config fakeroot patch neovim neofetch memtest86+ edk2-shell openrc &&
 echo "done." &&
 
 echo "generating fstab file:" &&
