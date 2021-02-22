@@ -17,7 +17,7 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf &&
 echo "done!" &&
 
 echo "setting keymap" &&
-echo "KEYMAP=de" >> /etc/vconsole.conf &&
+echo "KEYMAP=de-latin1" >> /etc/vconsole.conf &&
 echo "done" &&
 
 echo "setting hostname:" &&
