@@ -37,8 +37,8 @@ echo "done!" &&
 echo "enabling dhcpcd" &&
 rc-update add dhcpcd default &&
 
-echo "enabling iwctl" &&
-rc-update add iwctl default &&
+echo "enabling iwd" &&
+rc-update add iwd default &&
 
 echo "creating new User" &&
 read -p "Please enter a valid username: " USRNME &&
