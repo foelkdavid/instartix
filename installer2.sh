@@ -17,7 +17,7 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf &&
 echo "done!" &&
 
 echo "setting keymap" &&
-echo "KEYMAP=de-latin1" >> /etc/vconsole.conf &&
+echo "KEYMAP=de" >> /etc/vconsole.conf &&
 echo "done" &&
 
 echo "setting hostname:" &&
@@ -34,8 +34,11 @@ read -p "Please enter your CPU manufacturer:  [ amd | intel ]" SYSBRND &&
 pacman -S $SYSBRND-ucode &&
 echo "done!" &&
 
-echo "enabling dhcpcd"
+echo "enabling dhcpcd" &&
 rc-update add dhcpcd default &&
+
+echo "enabling iwctl" &&
+rc-update add iwctl default &&
 
 echo "creating new User" &&
 read -p "Please enter a valid username: " USRNME &&
